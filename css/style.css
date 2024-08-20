@@ -87,10 +87,134 @@ body{
     display: none;
 }
 
+/* ------------ Apresentação home --------------------- */
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 10% 0;
+
+}
+
+.home-content{
+    max-width: 600px;
+
+}
+
+.home-content h3{
+    font-size: 1.45rem;
+    font-weight: lighter;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.home-content h3:nth-last-of-type(2){
+    margin-bottom: 1.4rem ;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span{
+    color:var(--main-color);
+    font-weight: bold;
+
+}
+
+.home-content h1{
+    font-size: 2.4rem;
+    margin: 2px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p{
+    font-size: 1.1rem;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    text-align: justify;
+}
+
+
+.home-img{
+    max-width: 450px;
+    margin-right: -20px;
+   
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+}
+.home-img img{
+     border-radius: 50%;
+     box-shadow: 0 0 2.2rem var(--main-color);
+}
+
+.home-content .social-media a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    background: transparent;
+    border:2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+   
+}
+
+.home-content .social-media a:hover{
+    background: var(--main-color);
+    color:var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+   
+}
+
+.home-content .btn{
+    display: inline-block;
+    padding: 1rem 1.6rem;
+    background: var(--main-color);
+    border: 1px solid transparent;
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--main-color);
+    font-size: .9rem;
+    color: var(--bg-color);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.home-content .btn:hover{
+    background:var(--bg-color);
+    color: var(--main-color) ;
+    border: 1px solid var(--main-color);
+    transition: .7s ease-in-out;
+}
+
 /* -------------------  section projetos --------------------------- */
 .content-pro{
+    position: relative;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #06021b;
