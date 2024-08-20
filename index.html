@@ -6,7 +6,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <title>Document</title>
 </head>
 <body>
@@ -16,13 +16,14 @@
         <i class='bx bx-menu' id="menu-icon" ></i>
 
         <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#home" style="--i:1;" class="active-btn">Home</a>
             <a href="#about" style="--i:2;">About</a>
             <a href="#skills" style="--i:3;">Skills</a>
             <a href="#portfolio" style="--i:4;">Portifolio</a>
             <a href="#contact" style="--i:5;">Contact</a>
         </nav>
     </header>
+    
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
@@ -46,53 +47,114 @@
             <img src="./assets/img/home.jpeg" alt="">
         </div>
     </section>
+
+    <section class="about" id="about">
+        
+
+        <div class="about-content">
+            <div class="about-img">
+                <img src="https://media.giphy.com/media/8usSgvbCkB8AkoTYQv/giphy.gif" alt="">
+            </div>
+
+            <div class="about-content-text">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Full Stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi error a dignissimos officia, natus labore dolore iste architecto maxime illum facilis non beatae nobis fuga vero fugiat officiis perspiciatis nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fuga possimus unde, fugit itaque exercitationem voluptas alias aut non, est beatae quod. Minus odit provident similique, inventore sint velit accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laudantium rem in enim quisquam ex modi ab quasi. Possimus nobis corrupti, similique ut sed amet. Hic error nulla fuga quidem.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            
+        </div>
+
+        <div class="about-skill" id="Skills">
+            <h2 class="skill-title">Skills</h2>
+            <div class="cards">
+                <div class="box">
+                    <div class="wrapper">
+                        <img src="./assets/icons8-html-5-100 (1).png" class="cover-image" />
+                    </div>
+                    <img src="./assets/icons8-html-96.png" class="character" />
+                    </div>
+                <div class="box">
+                    <div class="wrapper">
+                        <img src="./assets/icons8-javascript-100.png" class="cover-image" />
+                    </div>
+                    <img src="./assets/file_type_light_js_icon_130458.png" class="character" />
+                </div>
+                
+                
+                    <!-- <div class="box">
+                        <p>HTML5</p>
+                        <img src="./assets/html.svg" alt="html">
+                    </div>
+                    <div class="box">
+                        <p>CSS3</p>
+                        <img src="./assets/css.svg" alt="css">
+                    </div>
+                    <div class="box">
+                        <p>JavaScript</p>
+                        <img src="./assets/javascript.svg" alt="javascript">
+                    </div>
+                    <div class="box">
+                        <p>Sass</p>
+                        <img src="./assets/sass.svg" alt="sass">
+                    </div>
+                    <div class="box">
+                        <p>Figma</p>
+                        <img src="./assets/figma.svg" alt="figma">
+                    </div>
+                </div> -->
+        </div>
+        
+    </section>
+
     <section class="content-pro">
         <h2 class="title-pro">Projetos</h2>
        
-            <div class="navigation">
-                        <ul>
-                            <li class="list active">
-                                <a href="#" id="toggleButtonJs" class="toggleButton" type="button">
-                                    <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
-                                    <span class="text">JS</span>
-                                    <span class="circle"></span>
-                                </a>
-                            </li>
-                
-                            <li class="list">
-                                <a href="#" id="toggleButtonCss" class="toggleButton" type="button">
-                                    <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
-                                    <span class="text">CSS</span>
-                                    <span class="circle"></span>
-                                </a>
-                            </li>
-                
-                            <li class="list">
-                                <a href="#" id="toggleButtonReact" class="toggleButton" type="button">
-                                    <span class="icon"><ion-icon name="logo-react"></ion-icon></span>
-                                    <span class="text">React</span>
-                                    <span class="circle"></span>
-                                </a>
-                            </li>
-                
-                            <li class="list">
-                                <a href="#" id="toggleButtonPy" class="toggleButton" type="button">
-                                    <span class="icon"><ion-icon name="logo-python"></ion-icon></span>
-                                    <span class="text">Python</span>
-                                    <span class="circle"></span>
-                                </a>
-                            </li>
-                
-                            <li class="list">
-                                <a href="#"  id="toggleButtonPhp" class="toggleButton" type="button">
-                                    <span class="icon"><ion-icon name="logo-laravel"></ion-icon></span>
-                                    <span class="text">Laravel</span>
-                                    <span class="circle"></span>
-                                </a>
-                            </li>
-                            <div class="indicator"></div>
-                        </ul>
-             </div>
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <button id="toggleButtonJs" class="toggleButton" type="button">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                        <span class="circle"></span>
+                    </button>
+                </li>
+        
+                <li class="list">
+                    <button id="toggleButtonCss" class="toggleButton" type="button">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                        <span class="circle"></span>
+                    </button>
+                </li>
+        
+                <li class="list">
+                    <button id="toggleButtonReact" class="toggleButton" type="button">
+                        <span class="icon"><ion-icon name="logo-react"></ion-icon></span>
+                        <span class="text">React</span>
+                        <span class="circle"></span>
+                    </button>
+                </li>
+        
+                <li class="list">
+                    <button id="toggleButtonPy" class="toggleButton" type="button">
+                        <span class="icon"><ion-icon name="logo-python"></ion-icon></span>
+                        <span class="text">Python</span>
+                        <span class="circle"></span>
+                    </button>
+                </li>
+        
+                <li class="list">
+                    <button id="toggleButtonPhp" class="toggleButton" type="button">
+                        <span class="icon"><ion-icon name="logo-laravel"></ion-icon></span>
+                        <span class="text">Laravel</span>
+                        <span class="circle"></span>
+                    </button>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+        
              <div class="card-projetos" id="card-projetos">
 
                    

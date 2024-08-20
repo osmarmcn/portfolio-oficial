@@ -15,13 +15,13 @@ let navbar = document.querySelector('.navbar')
 // })
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bxs-x-circle')
-    navbar.classList.toggle('active')
+    navbar.classList.toggle('active-btn')
   
 }
 
 // ------------------------ remove ------------------------------------------------------//
 menuIcon.classList.remove('bxs-x-circle')
-navbar.classList.remove('active')
+navbar.classList.remove('active-btn')
 
 
 // --------------------------------------------------------------------------------//
@@ -38,8 +38,8 @@ window.onscroll = () =>{
 
         if(top >= offset && top < offset + height){
             navLinks.forEach(links =>{
-                links.classList.remove('active')
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
+                links.classList.remove('active-btn')
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active-btn')
             })
         }
     })
