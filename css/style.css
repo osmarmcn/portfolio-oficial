@@ -22,6 +22,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+/* --------------- header ------------------------ */
 
 .header{
     position: fixed;
@@ -41,18 +42,18 @@ body{
     border-bottom: .1rem solid rgba(0,0,0, .2);
 }
 
-.logo{
+.header .logo{
     font-size: 1.35rem;
     color:var(--text-color);
     text-decoration: none;
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 
 }
 
-.navbar{
+.header .navbar{
     font-size: 1rem;
     
     font-weight: bold;
@@ -64,7 +65,7 @@ body{
 
 }
 
-.navbar a{
+.header .navbar a{
     color: var(--text-color);
     text-decoration: none;
     cursor: pointer;
@@ -74,8 +75,8 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
-.navbar a:hover,
-.navbar a.active{
+.header .navbar a:hover,
+.header .navbar a.active{
     color: var(--main-color);
 }
 
@@ -86,7 +87,7 @@ body{
     display: none;
 }
 
-
+/* -------------------  section projetos --------------------------- */
 .content-pro{
     display: flex;
     /* justify-content: center; */
@@ -448,4 +449,80 @@ body{
   #modal-links a:hover {
     text-decoration: underline;
   }
+
+
+  /* key frames */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage{
+   0%{
+    transform: translateY(0);
+
+   }
+   50%{
+    transform: translateY(-24px);
+   }
+   100%{
+    transform: translateY(0);
+
+   }
+}
   
