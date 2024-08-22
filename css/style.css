@@ -289,31 +289,106 @@ h2 span{
     letter-spacing: .1rem;
 }
 
-.cards{
+.wrapper-skill{
+    border: 1px solid lightskyblue;
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    /* mask-image: ; */
+
+
+}
+
+@keyframes scrollleft{
+    
+    to {
+        left: -200px;
+    }
+}
+
+.wrapper-skill.item{
+    width:200px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid red;
+    border-radius: 6px;
+    
+    position: absolute;
+    left: 100%;
+    animation-name: scrollleft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+
+
+}
+
+.wrapper-skill .item1{
+    animation-delay: calc(30s / 8 * (8 - 1) ) ;
+}
+
+.wrapper-skill .item2{
+    animation-delay:calc(30s / 8 * (8 - 3) )  ;
+}
+
+.wrapper-skill .item3{
+    animation-delay: calc(30s / 8 * (8 - 5) ) ;
+}
+
+.wrapper-skill .item4{
+    animation-delay: calc(30s / 8 * (8 - 7) ) ;
+}
+
+.wrapper-skill .item5{
+    animation-delay:calc(30s / 8 * (8 - 9) )  ;
+}
+
+.wrapper-skill .item6{
+    animation-delay: calc(30s / 8 * (8 - 11) ) ;
+}
+
+.wrapper-skill .item7{
+    animation-delay:calc(30s / 8 * (8 - 13) ) ;
+}
+
+.wrapper-skill .item8{
+    animation-delay:calc(30s / 8 * (8 - 15) )  ;
+}
+
+
+
+
+
+/* .cards{
     display: flex;
     justify-content: center;
     align-items: center;
     
 
-}
+} */
 
-.box{
+/* .box{
     width: var(--card-width);
     height: var(--card-height);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* padding: 0 36px; */
+    
     perspective: 2500px;
     margin: 0 .6rem;
     cursor: pointer;
 
 
     
-}
+} */
 
-.cover-image {
+/* .cover-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -354,19 +429,19 @@ h2 span{
       rgba(12, 13, 19, 0.5) 68%,
       rgba(12, 13, 19) 97%
     );
-  }
-  .wrapper::after {
+  } */
+  /* .wrapper::after {
     bottom: 0;
     opacity: 1;
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
       to bottom,
       transparent 46%,
       rgba(12, 13, 19, 0.5) 88%,
       rgba(12, 13, 19) 97%
-    ); */
-  }
+    );
+  } */
   
-  .box:hover .wrapper::before,
+  /* .box:hover .wrapper::before,
   .wrapper::after {
     opacity: 1;
   }
@@ -387,7 +462,7 @@ h2 span{
   .box:hover .character {
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
-  }
+  } */
 
 
 /* -------------------  section projetos --------------------------- */
