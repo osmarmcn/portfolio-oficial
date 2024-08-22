@@ -356,10 +356,19 @@ h2 span{
   }
   
   .tag-list li {
-    padding: 1rem;
+    width: 150px;
+    height: 150px;
+    padding: 1.5rem;
     background: var(--clr-primary-400);
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  }
+
+  .tag-list li img{
+    width: 100px;
+    height: 100px;
+    color: #0ef;
+
   }
   
   .test {
