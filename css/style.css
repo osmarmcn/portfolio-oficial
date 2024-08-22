@@ -291,41 +291,25 @@ h2 span{
 
 .scroller {
     max-width: 1400px;
+    overflow: hidden; /* Para garantir que o conteúdo extra não seja visível */
   }
   
   .scroller__inner {
     padding-block: 1rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Ajuste para garantir que o conteúdo fique em uma linha */
     gap: 1rem;
+    animation: scroll var(--_animation-duration, 50s) var(--_animation-direction, forwards) linear infinite;
   }
   
   .scroller[data-animated="true"] {
-    overflow: hidden;
-    -webkit-mask: linear-gradient(
-      90deg,
-      transparent,
-      white 20%,
-      white 80%,
-      transparent
-    );
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   }
-
-  .scroller[data-animated="true"] .scroller__inner {
-    width: calc(100% * 3);
-    display: flex;
-    flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 50s)
-      var(--_animation-direction, forwards) linear infinite;
-  }
   
-  /* .scroller[data-animated="true"] .scroller__inner {
-    width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 50s)
-      var(--_animation-direction, forwards) linear infinite;
-  } */
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content; /* Calcula automaticamente a largura baseada no conteúdo */
+  }
   
   .scroller[data-direction="right"] {
     --_animation-direction: reverse;
@@ -344,13 +328,15 @@ h2 span{
   }
   
   @keyframes scroll {
-    to {
-      transform: translateX(calc(-100% / 3));
+    0% {
+      transform: translateX(0); /* Inicia a animação na posição inicial */
+    }
+    100% {
+      transform: translateX(-50%); /* Movimenta o conteúdo para a esquerda, cobrindo 50% */
     }
   }
   
-  /* general styles */
-  
+  /* Estilos gerais */
   :root {
     --clr-neutral-100: hsl(0, 0%, 100%);
     --clr-primary-100: hsl(205, 15%, 58%);
@@ -361,15 +347,6 @@ h2 span{
   
   html {
     color-scheme: dark;
-  }
-  
-  body {
-    display: grid;
-    min-block-size: 100vh;
-    place-content: center;
-    font-family: system-ui;
-    font-size: 1.125rem;
-    background-color: var(--clr-primary-800);
   }
   
   .tag-list {
@@ -385,7 +362,6 @@ h2 span{
     box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
   }
   
-  /* for testing purposed to ensure the animation lined up correctly */
   .test {
     background: red !important;
   }

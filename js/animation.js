@@ -82,12 +82,14 @@ function addAnimation() {
     const scrollerInner = scroller.querySelector(".scroller__inner");
     const scrollerContent = Array.from(scrollerInner.children);
 
-    // Duplicar os itens o suficiente para cobrir 3x a largura do scroller
-    for (let i = 0; i < 2; i++) {
+    let totalWidth = 0;
+
+    while (totalWidth < scroller.clientWidth * 2) {
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         duplicatedItem.setAttribute("aria-hidden", true);
         scrollerInner.appendChild(duplicatedItem);
+        totalWidth += item.offsetWidth;
       });
     }
   });
