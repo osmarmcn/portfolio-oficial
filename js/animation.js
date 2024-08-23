@@ -54,7 +54,7 @@ header.classList.toggle('sticky', window.scrollY > 100)
 // ------------------------------scrollreveal---------------------------------------------//
 
 ScrollReveal({ 
-    // reset: true,
+    reset: true,
     distance: '80px',
     duration: 2000,
     delay:200
@@ -64,6 +64,8 @@ ScrollReveal().reveal('.heading', { origin: 'top'});
 ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom'});
 ScrollReveal().reveal('.about-img', { origin: 'left'});
 ScrollReveal().reveal('.about-content-text', { origin: 'right'});
+ScrollReveal().reveal('about-skill', {origin:'bottom'})
+
 
 
 
