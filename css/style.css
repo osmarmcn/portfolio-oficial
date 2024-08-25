@@ -145,20 +145,110 @@ body{
 
 
 .home-img{
-    max-width: 1000px;
-    margin-right: -20px;
-   
+    position: relative;
+    overflow: hidden;
+    
+    width: 580px;
+    height: 880px;
+    background: var(--bg-color);
+    border-radius: 16px;
+
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
+    
+}
+.home-img::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    max-width: 1000px;
+    width: 580px;
+    height: 880px;
+    background: linear-gradient(0deg,transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+
 }
 
-.home-img:hover{
-    opacity: 0;
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
+.home-img::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    max-width: 1000px;
+    width: 580px;
+    height: 880px;
+    background: linear-gradient(0deg,transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s ;
+
 }
-.home-img img{
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.home-img .borderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+
+}
+
+.home-img .borderline::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+   
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+
+}
+
+.home-img .borderline::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+  
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s ;
+
+}
+
+.home-img .img-efect{
+    position: absolute;
+    inset: 3px;
+    z-index: 2;
+    background-color: var(--bg-color);
+    padding: 50px 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-img-box .box-img img{
     width: 100%;
     height: 800px;
     background-position: center;
@@ -166,8 +256,9 @@ body{
     background-size: cover;
 
     border-radius: 20px;
+    transition:.3s ease-in-out;
     
-     box-shadow: 0 0 2.2rem var(--main-color);
+     
 }
 
 .home-content .social-media a{
@@ -240,6 +331,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 6rem;
     padding: 3rem 2%;
     margin-top: 9rem;
 
@@ -393,6 +485,8 @@ h2 span{
 
 /* -------------------------------------- */
 .about-skill{
+    width: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
