@@ -1,0 +1,37 @@
+.footer{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color)
+}
+
+.footer p{
+    font-size: .8rem;
+
+}
+
+.footer-icon{
+    transition: .4s ease-in-out;
+    padding: .6rem;
+    border-radius: 50%;
+
+}
+
+.footer-icon:hover{
+    
+     box-shadow: 0 0 1rem var(--main-color) ; 
+     transform: scale(1.04);
+}
+
+.footer-icon a{
+    color: var(--main-color);
+    
+}
+
+.footer-icon a i{
+    font-size: 2.4rem;
+    
+}

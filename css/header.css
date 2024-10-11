@@ -1,0 +1,72 @@
+@import 'geral.css';
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.header .sticky{
+    border-bottom: .1rem solid rgba(0,0,0, .2);
+}
+
+.header .logo{
+    font-size: 1.35rem;
+    color:var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.header .logo img{
+    width: 250px;
+    height: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .navbar{
+    font-size: 1rem;
+    
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+
+.header .navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.header .navbar a:hover,
+.header .navbar a.active-btn{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
