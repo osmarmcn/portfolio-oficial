@@ -49,7 +49,7 @@ const projects = [
           { src: "assets/mini-languages/firebase.svg", alt: "firebase" }
       ],
       languages: ["css", "html"],
-      link: "#"
+      link: "https://osmarmcn.github.io/landing-page-stranger-things/"
   },
   {
       title: "Lading page Adventure",
@@ -144,7 +144,7 @@ const projects = [
   title: "Catalogo de livros",
   image: "assets/projects/catalogo livro.png",
   alt: "Catalogo de livros",
-  date: "15 de Junho de 2024",
+  date: "06 de Outubro de 2024",
   completed: 'Concluído',
   technologies: [
     { src: "assets/mini-languages/html.svg", alt: "html" },
@@ -165,9 +165,104 @@ const projects = [
     { src: "assets/mini-languages/html.svg", alt: "html" },
     { src: "assets/mini-languages/css.svg", alt: "css" },
     { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+    { src: "assets/mini-languages/mysql.svg", alt: "mysql" },
      
   ],
   languages: ["javascript"],
+  link: "#"
+},
+{
+  title: "JOKEMPO",
+  image: "assets/projects/JOKEMPO.png",
+  alt: "JOKEMPO",
+  date: "09 de Julho de 2024",
+  completed: 'Concluído',
+  technologies: [
+    { src: "assets/mini-languages/html.svg", alt: "html" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+     
+  ],
+  languages: ["javascript"],
+  link: "#"
+},
+{
+  title: "Previsão do tempo",
+  image: "assets/projects/previsao-tempo.png",
+  alt: "Previsão do tempo",
+  date: "11 de Julho de 2024",
+  completed: 'Concluído',
+  technologies: [
+    { src: "assets/mini-languages/html.svg", alt: "html" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+     
+  ],
+  languages: ["javascript"],
+  link: "#"
+},
+{
+  title: "Conversor de moeda",
+  image: "assets/projects/conversor-moeda.png",
+  alt: "Conversor de moeda",
+  date: "03 de Outubro de 2024",
+  completed: 'Em andamento',
+  technologies: [
+    { src: "assets/mini-languages/html.svg", alt: "html" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+     
+  ],
+  languages: ["javascript"],
+  link: "#"
+},
+{
+  title: "Registro para o Governo",
+  image: "assets/projects/registro-gov.png",
+  alt: "Registro para o Governo",
+  date: "12 de julho de 2024",
+  completed: 'Concluído',
+  technologies: [
+      { src: "assets/mini-languages/react.svg", alt: "react" },
+    { src: "assets/mini-languages/mysql.svg", alt: "mysql" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+    { src: "assets/mini-languages/node.svg", alt: "node" },
+  
+     
+  ],
+  languages: ["react"],
+  link: "#"
+},
+{
+  title: "Ecommerce de roupas",
+  image: "assets/projects/ecommerce-roupas.png",
+  alt: "Ecommerce de roupas",
+  date: "07 de Setembro de 2023",
+  completed: 'Concluído',
+  technologies: [
+      { src: "assets/mini-languages/react.svg", alt: "react" },
+    { src: "assets/mini-languages/node.svg", alt: "node" },
+    { src: "assets/mini-languages/tailwind.svg", alt: "tailwind" },
+  
+     
+  ],
+  languages: ["react"],
+  link: "#"
+},
+{
+  title: "rick and morty",
+  image: "assets/projects/rick-and-morty.png",
+  alt: "rick and morty",
+  date: "11 de Outubro de 2024",
+  completed: 'Em andamento',
+  technologies: [
+    { src: "assets/mini-languages/react.svg", alt: "react" },
+    { src: "assets/mini-languages/node.svg", alt: "node" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+  
+     
+  ],
+  languages: ["react"],
   link: "#"
 },
   // Adicione mais projetos conforme necessário
@@ -252,7 +347,7 @@ const modal = {
   • Animação de Flip em 3D (com CSS puro); <br>
   • Verso do Card com informações sobre o DoWhile 2021; <br>
   • Versão Desktop e Mobile.`,
-  videoSrc: 'https://streamable.com/e/qceqn0',
+  videoSrc: 'https://osmarmcn.github.io/landing-page-stranger-things/',
   linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
   repository: 'https://github.com/rhuanbello/origin-nlw-heat',
   site: 'https://dowhile2021-rhuanbello.vercel.app/'
