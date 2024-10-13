@@ -37,33 +37,139 @@ list.forEach((item) => item.addEventListener('click', activeLink))
 
 const projects = [
   {
-      title: "Death Cat Grocery Store",
-      image: "assets/projects/deathcat.jpg",
-      alt: "grocery store",
-      date: "28 de Setembro de 2021",
+      title: "Lading page stranger things",
+      image: "assets/projects/Mundo invertido.png",
+      alt: "mundo invertido",
+      date: "01 de Março de 2024",
+      completed: 'Concluído',
       technologies: [
           { src: "assets/mini-languages/html.svg", alt: "html" },
           { src: "assets/mini-languages/css.svg", alt: "css" },
           { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-          { src: "assets/mini-languages/figma.svg", alt: "figma" }
+          { src: "assets/mini-languages/firebase.svg", alt: "firebase" }
       ],
-      languages: ["javascript", "css"],
+      languages: ["css", "html"],
       link: "#"
   },
   {
-      title: "Youtube Clone",
-      image: "assets/projects/youtube.jpg",
-      alt: "youtube clone",
-      date: "23 de Setembro de 2021",
+      title: "Lading page Adventure",
+      image: "assets/projects/adventure.png",
+      alt: "landing page adventure",
+      date: "18 de Fevereiro de 2024",
+      completed: 'Concluído',
       technologies: [
           { src: "assets/mini-languages/html.svg", alt: "html" },
           { src: "assets/mini-languages/css.svg", alt: "css" },
           { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-          { src: "assets/mini-languages/figma.svg", alt: "figma" }
       ],
-      languages: ["javascript", "css"],
+      languages: ["css", "html"],
       link: "#"
   },
+  {
+    title: "Lading page Galeria",
+    image: "assets/projects/galeria.png",
+    alt: "glaeria de imagens",
+    date: "15 de Maio de 2024",
+    completed: 'Concluído',
+    technologies: [
+        { src: "assets/mini-languages/html.svg", alt: "html" },
+        { src: "assets/mini-languages/sass.svg", alt: "css" },
+       
+    ],
+    languages: ["css", "html"],
+    link: "#"
+},
+{
+  title: "page cat",
+  image: "assets/projects/page-cat.png",
+  alt: "pagina de gatos",
+  date: "09 de Maio de 2024",
+  completed: 'Concluído',
+  technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/figma.svg", alt: "figma" },
+     
+  ],
+  languages: ["css", "html"],
+  link: "#"
+},
+{
+  title: "pagina de receita",
+  image: "assets/projects/receita.png",
+  alt: "pagina de receita",
+  date: "17 de Abril de 2024",
+  completed: 'Concluído',
+  technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/figma.svg", alt: "figma" },
+     
+  ],
+  languages: ["css", "html"],
+  link: "#"
+},
+{
+  title: "to-do-list",
+  image: "assets/projects/to do list.png",
+  alt: "lista de tarefas",
+  date: "27 de Agosto de 2024",
+  completed: 'Concluído',
+  technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+     
+  ],
+  languages: ["javascript"],
+  link: "#"
+},
+{
+  title: "Controle do tempo",
+  image: "assets/projects/controle do tempo.png",
+  alt: "Controle do tempo",
+  date: "15 de Junho de 2024",
+  completed: 'Concluído',
+  technologies: [
+    { src: "assets/mini-languages/html.svg", alt: "html" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+    { src: "assets/mini-languages/figma.svg", alt: "figma" },
+     
+  ],
+  languages: ["javascript"],
+  link: "#"
+},
+{
+  title: "Catalogo de livros",
+  image: "assets/projects/catalogo livro.png",
+  alt: "Catalogo de livros",
+  date: "15 de Junho de 2024",
+  completed: 'Concluído',
+  technologies: [
+    { src: "assets/mini-languages/html.svg", alt: "html" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+     
+  ],
+  languages: ["javascript"],
+  link: "#"
+},
+{
+  title: "Sistema de presença",
+  image: "assets/projects/sistema de presenca.png",
+  alt: "Catalogo de livros",
+  date: "15 de Junho de 2024",
+  completed: 'Em andamento',
+  technologies: [
+    { src: "assets/mini-languages/html.svg", alt: "html" },
+    { src: "assets/mini-languages/css.svg", alt: "css" },
+    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+     
+  ],
+  languages: ["javascript"],
+  link: "#"
+},
   // Adicione mais projetos conforme necessário
 ];
 
@@ -78,14 +184,19 @@ function displayProjects(filteredProjects) {
       <div class="box">
           <div class="cover">
               <img src="${projeto.image}" alt="${projeto.alt}">
+              
+          </div>
+          <div class="description">
               <div class="details">
                   <p>${projeto.title}</p>
                   <div class="mini-languages">
+                    <div class="lang">
                       ${projeto.technologies.map(tech => `<img src="${tech.src}" alt="${tech.alt}">`).join('')}
+                    </div>
+                    
+                    <span>projeto: ${projeto.completed}</span>
                   </div>
               </div>
-          </div>
-          <div class="description">
               <p>${projeto.date}</p>
               <a href="#" data-index="${index}" class="view-more">Ver mais</a>
           </div>
