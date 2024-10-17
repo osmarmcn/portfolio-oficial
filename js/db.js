@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Lading page stranger things",
-    image: "assets/projects/Mundo invertido.png",
+    image: "assets/projects/mundo-invertido.png",
     alt: "mundo invertido",
     date: "01 de Março de 2024",
     completed: 'Concluído',
