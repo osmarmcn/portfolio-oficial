@@ -1,3 +1,5 @@
+import { projects } from "./db.js"
+
 
 const list = document.querySelectorAll('.list')
 
@@ -34,239 +36,96 @@ list.forEach((item) => item.addEventListener('click', activeLink))
 // });
 
 // -------------------------------------------------------------------------------------------------------
+// const projetos = [
+//   {
+//     title: 'Stranger Things',
+//     date: '24 de Outubro de 2021',
+//     description: `A aplicação temática de Stranger Things transporta você diretamente para Hawkins, com uma interface interativa inspirada na série. <br><br>
+//     Recursos da aplicação: <br><br>
+//     • Modal inspirado na tecnologia Upside Down, onde o usuário pode inserir seus próprios dados e personalizar seu Card de Hawkins; <br><br>
+//     • Armazenamento de informações no LocalStorage, mantendo seus dados salvos, mesmo que você viaje para o Mundo Invertido; <br><br>
+//     • Efeitos de animação 3D com a estética sombria da série; <br><br>
+//     • Verso do Card com informações misteriosas sobre o universo de Stranger Things; <br>
+//     `,
+//     video: 'https://www.youtube.com/embed/z7uOPI-l-Eo?si=49rPGBxvcDYlOtCp',
+//     linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
+//     repository: 'https://github.com/rhuanbello/origin-nlw-heat',
+//     site: 'https://dowhile2021-rhuanbello.vercel.app/'
+//   },
+//   {
+//     title: 'Ecommecer-shop',
+//     date: '07 de Setembro de 2023',
+//     description: `A aplicação de e-commerce de roupas traz uma experiência imersiva, unindo estilo e tecnologia com uma interface interativa. Baseada em uma API fake, a loja oferece uma navegação intuitiva e eficiente para os usuários. <br><br>
+//     Recursos da aplicação: <br><br>
+//     • Carrinho de compras dinâmico, onde os usuários podem adicionar e gerenciar seus produtos selecionados de forma prática; <br><br>
+//     • Armazenamento de informações no LocalStorage, garantindo que os itens do carrinho permaneçam salvos mesmo após fechar o navegador; <br><br>
+//     • Interface visual moderna, com um design focado em oferecer uma experiência de compra fluida; <br><br>
+//     • Detalhamento completo de cada peça de roupa, incluindo descrições, preços e imagens de alta qualidade; <br>
+//     `,
+//     video: 'https://youtu.be/c5lSn-u5jNA?si=0QMiO4QQbXuul75d',
+//     linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
+//     repository: 'https://github.com/rhuanbello/origin-nlw-heat',
+//     site: 'https://dowhile2021-rhuanbello.vercel.app/'
+//   },
+//   // ... outros projetos
+// ];
 
-const projects = [
-  {
-      title: "Lading page stranger things",
-      image: "assets/projects/Mundo invertido.png",
-      alt: "mundo invertido",
-      date: "01 de Março de 2024",
-      completed: 'Concluído',
-      technologies: [
-          { src: "assets/mini-languages/html.svg", alt: "html" },
-          { src: "assets/mini-languages/css.svg", alt: "css" },
-          { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-          { src: "assets/mini-languages/firebase.svg", alt: "firebase" }
-      ],
-      languages: ["css", "html"],
-      link: "https://osmarmcn.github.io/landing-page-stranger-things/"
-  },
-  {
-      title: "Lading page Adventure",
-      image: "assets/projects/adventure.png",
-      alt: "landing page adventure",
-      date: "18 de Fevereiro de 2024",
-      completed: 'Concluído',
-      technologies: [
-          { src: "assets/mini-languages/html.svg", alt: "html" },
-          { src: "assets/mini-languages/css.svg", alt: "css" },
-          { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-      ],
-      languages: ["css", "html"],
-      link: "#"
-  },
-  {
-    title: "Lading page Galeria",
-    image: "assets/projects/galeria.png",
-    alt: "glaeria de imagens",
-    date: "15 de Maio de 2024",
-    completed: 'Concluído',
-    technologies: [
-        { src: "assets/mini-languages/html.svg", alt: "html" },
-        { src: "assets/mini-languages/sass.svg", alt: "css" },
-       
-    ],
-    languages: ["css", "html"],
-    link: "#"
-},
-{
-  title: "page cat",
-  image: "assets/projects/page-cat.png",
-  alt: "pagina de gatos",
-  date: "09 de Maio de 2024",
-  completed: 'Concluído',
-  technologies: [
-      { src: "assets/mini-languages/html.svg", alt: "html" },
-      { src: "assets/mini-languages/css.svg", alt: "css" },
-      { src: "assets/mini-languages/figma.svg", alt: "figma" },
-     
-  ],
-  languages: ["css", "html"],
-  link: "#"
-},
-{
-  title: "pagina de receita",
-  image: "assets/projects/receita.png",
-  alt: "pagina de receita",
-  date: "17 de Abril de 2024",
-  completed: 'Concluído',
-  technologies: [
-      { src: "assets/mini-languages/html.svg", alt: "html" },
-      { src: "assets/mini-languages/css.svg", alt: "css" },
-      { src: "assets/mini-languages/figma.svg", alt: "figma" },
-     
-  ],
-  languages: ["css", "html"],
-  link: "#"
-},
-{
-  title: "to-do-list",
-  image: "assets/projects/to do list.png",
-  alt: "lista de tarefas",
-  date: "27 de Agosto de 2024",
-  completed: 'Concluído',
-  technologies: [
-      { src: "assets/mini-languages/html.svg", alt: "html" },
-      { src: "assets/mini-languages/css.svg", alt: "css" },
-      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-     
-  ],
-  languages: ["javascript"],
-  link: "#"
-},
-{
-  title: "Controle do tempo",
-  image: "assets/projects/controle do tempo.png",
-  alt: "Controle do tempo",
-  date: "15 de Junho de 2024",
-  completed: 'Concluído',
-  technologies: [
-    { src: "assets/mini-languages/html.svg", alt: "html" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-    { src: "assets/mini-languages/figma.svg", alt: "figma" },
-     
-  ],
-  languages: ["javascript"],
-  link: "#"
-},
-{
-  title: "Catalogo de livros",
-  image: "assets/projects/catalogo livro.png",
-  alt: "Catalogo de livros",
-  date: "06 de Outubro de 2024",
-  completed: 'Concluído',
-  technologies: [
-    { src: "assets/mini-languages/html.svg", alt: "html" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-     
-  ],
-  languages: ["javascript"],
-  link: "#"
-},
-{
-  title: "Sistema de presença",
-  image: "assets/projects/sistema de presenca.png",
-  alt: "Catalogo de livros",
-  date: "15 de Junho de 2024",
-  completed: 'Em andamento',
-  technologies: [
-    { src: "assets/mini-languages/html.svg", alt: "html" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-    { src: "assets/mini-languages/mysql.svg", alt: "mysql" },
-     
-  ],
-  languages: ["javascript"],
-  link: "#"
-},
-{
-  title: "JOKEMPO",
-  image: "assets/projects/JOKEMPO.png",
-  alt: "JOKEMPO",
-  date: "09 de Julho de 2024",
-  completed: 'Concluído',
-  technologies: [
-    { src: "assets/mini-languages/html.svg", alt: "html" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-     
-  ],
-  languages: ["javascript"],
-  link: "#"
-},
-{
-  title: "Previsão do tempo",
-  image: "assets/projects/previsao-tempo.png",
-  alt: "Previsão do tempo",
-  date: "11 de Julho de 2024",
-  completed: 'Concluído',
-  technologies: [
-    { src: "assets/mini-languages/html.svg", alt: "html" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-     
-  ],
-  languages: ["javascript"],
-  link: "#"
-},
-{
-  title: "Conversor de moeda",
-  image: "assets/projects/conversor-moeda.png",
-  alt: "Conversor de moeda",
-  date: "03 de Outubro de 2024",
-  completed: 'Em andamento',
-  technologies: [
-    { src: "assets/mini-languages/html.svg", alt: "html" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-    { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
-     
-  ],
-  languages: ["javascript"],
-  link: "#"
-},
-{
-  title: "Registro para o Governo",
-  image: "assets/projects/registro-gov.png",
-  alt: "Registro para o Governo",
-  date: "12 de julho de 2024",
-  completed: 'Concluído',
-  technologies: [
-      { src: "assets/mini-languages/react.svg", alt: "react" },
-    { src: "assets/mini-languages/mysql.svg", alt: "mysql" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-    { src: "assets/mini-languages/node.svg", alt: "node" },
+function modalProjetos(projeto) {
+  const modal = document.getElementById('modalInfoProjetos');
+  const overlay = document.getElementById('modalOverlay');
+
+  // Preencher o modal com as informações do projeto
+  document.getElementById('res-title').textContent = projeto.title;
+  document.getElementById('date').textContent = projeto.date;
+  document.getElementById('description').innerHTML = projeto.description || "Descrição não disponível";
   
-     
-  ],
-  languages: ["react"],
-  link: "#"
-},
-{
-  title: "Ecommerce de roupas",
-  image: "assets/projects/ecommerce-roupas.png",
-  alt: "Ecommerce de roupas",
-  date: "07 de Setembro de 2023",
-  completed: 'Concluído',
-  technologies: [
-      { src: "assets/mini-languages/react.svg", alt: "react" },
-    { src: "assets/mini-languages/node.svg", alt: "node" },
-    { src: "assets/mini-languages/tailwind.svg", alt: "tailwind" },
-  
-     
-  ],
-  languages: ["react"],
-  link: "#"
-},
-{
-  title: "rick and morty",
-  image: "assets/projects/rick-and-morty.png",
-  alt: "rick and morty",
-  date: "11 de Outubro de 2024",
-  completed: 'Em andamento',
-  technologies: [
-    { src: "assets/mini-languages/react.svg", alt: "react" },
-    { src: "assets/mini-languages/node.svg", alt: "node" },
-    { src: "assets/mini-languages/css.svg", alt: "css" },
-  
-     
-  ],
-  languages: ["react"],
-  link: "#"
-},
-  // Adicione mais projetos conforme necessário
-];
+  // Configurar o vídeo
+  const videoElement = document.getElementById('video');
+  if (projeto.video) {
+    videoElement.src = projeto.video;
+    videoElement.parentElement.style.display = 'block';
+  } else {
+    videoElement.parentElement.style.display = 'none';
+  }
+
+  // Configurar os links
+  const linkProject = document.getElementById('link-project');
+  const linkRepository = document.getElementById('link-repository');
+  const linkLinkedin = document.getElementById('link-linkedin');
+
+  linkProject.href = projeto.link || "#";
+  linkProject.style.display = projeto.link ? 'inline-block' : 'none';
+
+  linkRepository.href = projeto.repository || "#";
+  linkRepository.style.display = projeto.repository ? 'inline-block' : 'none';
+
+  linkLinkedin.href = projeto.linkedin || "#";
+  linkLinkedin.style.display = projeto.linkedin ? 'inline-block' : 'none';
+
+  // Exibir o modal e o overlay
+  modal.style.display = 'block';
+  overlay.style.display = 'block';
+
+  // Desativar o scroll da página
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const modal = document.getElementById('modalInfoProjetos');
+  const overlay = document.getElementById('modalOverlay');
+
+  modal.style.display = 'none';
+  overlay.style.display = 'none';
+
+  // Reativar o scroll da página
+  document.body.style.overflow = '';
+}
+
+// Adicionar event listener para o botão de fechar
+document.getElementById('close-modal').addEventListener('click', closeModal);
+
+// Adicionar event listener para fechar o modal ao clicar no overlay
+document.getElementById('modalOverlay').addEventListener('click', closeModal);
 
 
 
@@ -279,7 +138,6 @@ function displayProjects(filteredProjects) {
       <div class="box">
           <div class="cover">
               <img src="${projeto.image}" alt="${projeto.alt}">
-              
           </div>
           <div class="description">
               <div class="details">
@@ -288,23 +146,21 @@ function displayProjects(filteredProjects) {
                     <div class="lang">
                       ${projeto.technologies.map(tech => `<img src="${tech.src}" alt="${tech.alt}">`).join('')}
                     </div>
-                    
                     <span>projeto: ${projeto.completed}</span>
                   </div>
               </div>
               <p>${projeto.date}</p>
-              <a href="#" data-index="${index}" class="view-more">Ver mais</a>
+              <a href="#" class="view-more">Ver mais</a>
           </div>
       </div>
     `;
   });
 
   // Adiciona os event listeners para os botões "Ver mais"
-  document.querySelectorAll('.view-more').forEach(button => {
+  document.querySelectorAll('.view-more').forEach((button, index) => {
     button.addEventListener('click', function(event) {
       event.preventDefault();
-      const index = this.getAttribute('data-index');
-      CriarModal(index);
+      modalProjetos(filteredProjects[index]);
     });
   });
 }
@@ -337,64 +193,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const modal = {
-  title: 'DoWhile 2021 Virtual Badge',
-  date: '24 de Outubro de 2021',
-  description: `O DoWhile 2021 Card é uma aplicação interativa que mostra informações do usuário através da API do GitHub :D <br><br>
-  Após concluir o evento, adicionei funcionalidades extras, como: <br><br>
-  • Modal para o usuário inserir seus próprios dados no Card; <br>
-  • Armazenamento dos dados inseridos pelo usuário no LocalStorage do navegador, fazendo com que as informações sejam mantidas mesmo após fechar a página; <br>
-  • Animação de Flip em 3D (com CSS puro); <br>
-  • Verso do Card com informações sobre o DoWhile 2021; <br>
-  • Versão Desktop e Mobile.`,
-  videoSrc: 'https://osmarmcn.github.io/landing-page-stranger-things/',
-  linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
-  repository: 'https://github.com/rhuanbello/origin-nlw-heat',
-  site: 'https://dowhile2021-rhuanbello.vercel.app/'
-};
+// const modal = {
+//   title: 'DoWhile 2021 Virtual Badge',
+//   date: '24 de Outubro de 2021',
+//   description: `O DoWhile 2021 Card é uma aplicação interativa que mostra informações do usuário através da API do GitHub :D <br><br>
+//   Após concluir o evento, adicionei funcionalidades extras, como: <br><br>
+//   • Modal para o usuário inserir seus próprios dados no Card; <br>
+//   • Armazenamento dos dados inseridos pelo usuário no LocalStorage do navegador, fazendo com que as informações sejam mantidas mesmo após fechar a página; <br>
+//   • Animação de Flip em 3D (com CSS puro); <br>
+//   • Verso do Card com informações sobre o DoWhile 2021; <br>
+//   • Versão Desktop e Mobile.`,
+//   videoSrc: 'https://osmarmcn.github.io/landing-page-stranger-things/',
+//   linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
+//   repository: 'https://github.com/rhuanbello/origin-nlw-heat',
+//   site: 'https://dowhile2021-rhuanbello.vercel.app/'
+// };
 
-function CriarModal(index) {
-  const projeto = projects[index];
+// function CriarModal(index) {
+//   const projeto = projects[index];
   
-  // Cria o HTML do modal
-  const modalHTML = `
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span id="modal-close" class="modal-close">&times;</span>
-            <h2>${projeto.title}</h2>
-            <p>${projeto.date}</p>
-            <div>${projeto.description}</div>
-            <div id="modal-video">
-                <iframe width="100%" height="400" frameborder="0" allowfullscreen src="${projeto.videoSrc}"></iframe>
-            </div>
-            <div id="modal-links">
-                <a href="${projeto.linkedin}" target="_blank">LinkedIn</a>
-                <a href="${projeto.repository}" target="_blank">Repository</a>
-                <a href="${projeto.site}" target="_blank">Site</a>
-            </div>
-        </div>
-    </div>
-  `;
+//   // Cria o HTML do modal
+//   const modalHTML = `
+//     <div id="modal" class="modal">
+//         <div class="modal-content">
+//             <span id="modal-close" class="modal-close">&times;</span>
+//             <h2>${projeto.title}</h2>
+//             <p>${projeto.date}</p>
+//             <div>${projeto.description}</div>
+//             <div id="modal-video">
+//                 <iframe width="100%" height="400" frameborder="0" allowfullscreen src="${projeto.videoSrc}"></iframe>
+//             </div>
+//             <div id="modal-links">
+//                 <a href="${projeto.linkedin}" target="_blank">LinkedIn</a>
+//                 <a href="${projeto.repository}" target="_blank">Repository</a>
+//                 <a href="${projeto.site}" target="_blank">Site</a>
+//             </div>
+//         </div>
+//     </div>
+//   `;
   
-  // Adiciona o modal ao corpo do documento
-  document.body.insertAdjacentHTML('beforeend', modalHTML);
+//   // Adiciona o modal ao corpo do documento
+//   document.body.insertAdjacentHTML('beforeend', modalHTML);
 
-  // Exibe o modal
-  const modalElement = document.getElementById('modal');
-  modalElement.style.display = 'flex';
+//   // Exibe o modal
+//   const modalElement = document.getElementById('modal');
+//   modalElement.style.display = 'flex';
 
-  // Fecha o modal quando o botão de fechar é clicado
-  document.getElementById('modal-close').addEventListener('click', function() {
-    modalElement.remove();
-  });
+//   // Fecha o modal quando o botão de fechar é clicado
+//   document.getElementById('modal-close').addEventListener('click', function() {
+//     modalElement.remove();
+//   });
 
-  // Fecha o modal quando clicar fora do conteúdo
-  window.addEventListener('click', function(event) {
-    if (event.target === modalElement) {
-      modalElement.remove();
-    }
-  });
-}
+//   // Fecha o modal quando clicar fora do conteúdo
+//   window.addEventListener('click', function(event) {
+//     if (event.target === modalElement) {
+//       modalElement.remove();
+//     }
+//   });
+// }
 
 
 

@@ -224,18 +224,36 @@
             </ul>
         </div>
         
-             <div class="card-projetos" id="card-projetos">
+        <div class="card-projetos" id="card-projetos"></div>
 
-                   
+        <div id="modalOverlay" class="modal-overlay"></div>
+        <div id="modalInfoProjetos" class="hidden-modal">
+            <div class="header-modal">
+                <img src="assets/img/close.svg" alt="" id="close-modal">
             </div>
-             
-
+            <div class="container-modal">
+                <div class="title">
+                    <h2 id="res-title"></h2>
+                </div>
+                <div class="content-modal">
+                    <div class="video-modal">
+                        <iframe width="700" height="350" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+                    </div>
+                    <div class="info">
+                        <span id="date"></span>
+                        <p id="description"></p>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="" target="_blank" class="link-project" id="link-project">Acessar projeto</a>
+                    <a href="" target="_blank" class="link-repository" id="link-repository">Acessar repositório</a>
+                    <a href="" target="_blank" class="link-linkedin" id="link-linkedin">Ver post no Linkedin</a>
+                </div>
+            </div>
         </div>
         
-
-       
-
     </section>
+    
 
     <footer class="footer">
         <div class="footer-text">
@@ -254,7 +272,7 @@
    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
     <script src="./js/animation.js"></script>
 
 

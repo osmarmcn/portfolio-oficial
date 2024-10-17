@@ -1,0 +1,289 @@
+const projects = [
+  {
+    title: "Lading page stranger things",
+    image: "assets/projects/Mundo invertido.png",
+    alt: "mundo invertido",
+    date: "01 de Março de 2024",
+    completed: 'Concluído',
+    technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+      { src: "assets/mini-languages/firebase.svg", alt: "firebase" }
+    ],
+    languages: ["css", "html"],
+    link: "https://osmarmcn.github.io/landing-page-stranger-things/",
+    description: `A aplicação temática de Stranger Things transporta você diretamente para Hawkins, com uma interface interativa inspirada na série. <br><br>
+    Recursos da aplicação: <br><br>
+    • Modal inspirado na tecnologia Upside Down, onde o usuário pode inserir seus próprios dados e personalizar seu Card de Hawkins; <br><br>
+    • Armazenamento de informações no LocalStorage, mantendo seus dados salvos, mesmo que você viaje para o Mundo Invertido; <br><br>
+    • Efeitos de animação 3D com a estética sombria da série; <br><br>
+    • Verso do Card com informações misteriosas sobre o universo de Stranger Things; <br>
+    `,
+    video: 'https://www.youtube.com/embed/z7uOPI-l-Eo?si=49rPGBxvcDYlOtCp',
+     repository: 'https://github.com/osmarmcn/landing-page-stranger-things',
+    linkedin: 'https://www.linkedin.com/posts/osmar-mendescn_fazia-algum-tempo-que-n%C3%A3o-mexia-com-html-activity-7181800937856843776-3aTy?utm_source=share&utm_medium=member_desktop',
+   
+  },
+    {
+        title: "Lading page Adventure",
+        image: "assets/projects/adventure.png",
+        alt: "landing page adventure",
+        date: "18 de Fevereiro de 2024",
+        completed: 'Concluído',
+        technologies: [
+            { src: "assets/mini-languages/html.svg", alt: "html" },
+            { src: "assets/mini-languages/css.svg", alt: "css" },
+            { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+        ],
+        languages: ["css", "html"],
+        link:'https://osmarmcn.github.io/Website-adventure/',
+        description: `Landing page baseada em site de aventura, equipamentos e o que fazer em uma aventura trilhas, passeio sobre a montanha. <br><br>
+        Recursos da aplicação: <br><br>
+        • ; <br><br>
+        • Armazenamento de informações no LocalStorage, mantendo seus dados salvos, mesmo que você viaje para o Mundo Invertido; <br><br>
+        • Efeitos de animação 3D com a estética sombria da série; <br><br>
+        • Verso do Card com informações misteriosas sobre o universo de Stranger Things; <br>
+        `,
+      video: 'https://www.youtube.com/embed/p1Jxfgolghw?si=PNazkCK-NkfJaJcp',
+      repository: 'https://github.com/osmarmcn/Website-adventure',
+      linkedin: '',
+    
+    },
+    {
+      title: "Lading page Galeria",
+      image: "assets/projects/galeria.png",
+      alt: "glaeria de imagens",
+      date: "15 de Maio de 2024",
+      completed: 'Concluído',
+      technologies: [
+          { src: "assets/mini-languages/html.svg", alt: "html" },
+          { src: "assets/mini-languages/sass.svg", alt: "css" },
+         
+      ],
+      languages: ["css", "html"],
+      link:'https://osmarmcn.github.io/Website-adventure/',
+      description: `Landing page Galeria de imagens, que contém imagens de diversos segmentos a gosto de quem for procurar uma imagem que lhe agrade. <br><br>
+      Recursos da aplicação: <br><br>
+      • O projeto foi baseado em Sass para processamento do css efoi usado aguns efeitos para deixar mais atrativo; <br><br>
+      `,
+    video: 'https://www.youtube.com/embed/9eqHj-SLabY?si=YEqw6iVIyk6fVbFV',
+    repository: 'https://github.com/osmarmcn/gallery-sass',
+    linkedin: '',
+  },
+  {
+    title: "page cat",
+    image: "assets/projects/page-cat.png",
+    alt: "pagina de gatos",
+    date: "09 de Maio de 2024",
+    completed: 'Concluído',
+    technologies: [
+        { src: "assets/mini-languages/html.svg", alt: "html" },
+        { src: "assets/mini-languages/css.svg", alt: "css" },
+        { src: "assets/mini-languages/figma.svg", alt: "figma" },
+       
+    ],
+    languages: ["css", "html"],
+    link: "#"
+  },
+  {
+    title: "pagina de receita",
+    image: "assets/projects/receita.png",
+    alt: "pagina de receita",
+    date: "17 de Abril de 2024",
+    completed: 'Concluído',
+    technologies: [
+        { src: "assets/mini-languages/html.svg", alt: "html" },
+        { src: "assets/mini-languages/css.svg", alt: "css" },
+        { src: "assets/mini-languages/figma.svg", alt: "figma" },
+       
+    ],
+    languages: ["css", "html"],
+    link: "#"
+  },
+  {
+    title: "to-do-list",
+    image: "assets/projects/to do list.png",
+    alt: "lista de tarefas",
+    date: "27 de Agosto de 2024",
+    completed: 'Concluído',
+    technologies: [
+        { src: "assets/mini-languages/html.svg", alt: "html" },
+        { src: "assets/mini-languages/css.svg", alt: "css" },
+        { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+       
+    ],
+    languages: ["javascript"],
+    link:'https://osmarmcn.github.io/to-do-list/',
+    description: `Landing page Galeria de imagens, que contém imagens de diversos segmentos a gosto de quem for procurar uma imagem que lhe agrade. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado em Sass para processamento do css efoi usado aguns efeitos para deixar mais atrativo; <br><br>
+    `,
+    video: 'https://www.youtube.com/embed/WWhjO1nAKRs?si=UvfSOi3g1ScB4df7',
+    repository: 'https://github.com/osmarmcn/to-do-list',
+    linkedin: 'https://www.linkedin.com/posts/osmar-mendescn_e-a%C3%AD-pessoal-recentemente-estava-trabalhando-activity-7234660508354641920-r5Lm?utm_source=share&utm_medium=member_desktop',
+  },
+  {
+    title: "Controle do tempo",
+    image: "assets/projects/controle do tempo.png",
+    alt: "Controle do tempo",
+    date: "15 de Junho de 2024",
+    completed: 'Concluído',
+    technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+      { src: "assets/mini-languages/figma.svg", alt: "figma" },
+       
+    ],
+    languages: ["javascript"],
+    link:'https://osmarmcn.github.io/time-tracking/',
+    description: `Landing page Galeria de imagens, que contém imagens de diversos segmentos a gosto de quem for procurar uma imagem que lhe agrade. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado em Sass para processamento do css efoi usado aguns efeitos para deixar mais atrativo; <br><br>
+    `,
+    video: 'https://www.youtube.com/embed/uyo9FdIZEBw?si=j7L705ZCgZaf7drf',
+    repository: 'https://github.com/osmarmcn/time-tracking',
+    linkedin: 'https://www.linkedin.com/posts/osmar-mendescn_ol%C3%A1-pessoal-vim-mostrar-esse-pequeno-desafio-activity-7208466903038623748-urab?utm_source=share&utm_medium=member_desktop',
+  },
+  {
+    title: "Catalogo de livros",
+    image: "assets/projects/catalogo livro.png",
+    alt: "Catalogo de livros",
+    date: "06 de Outubro de 2024",
+    completed: 'Concluído',
+    technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+       
+    ],
+    languages: ["javascript"],
+    link: "#"
+  },
+  {
+    title: "Sistema de presença",
+    image: "assets/projects/sistema de presenca.png",
+    alt: "Catalogo de livros",
+    date: "15 de Junho de 2024",
+    completed: 'Em andamento',
+    technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+      { src: "assets/mini-languages/mysql.svg", alt: "mysql" },
+       
+    ],
+    languages: ["javascript"],
+    link: "#"
+  },
+  {
+    title: "JOKEMPO",
+    image: "assets/projects/JOKEMPO.png",
+    alt: "JOKEMPO",
+    date: "09 de Julho de 2024",
+    completed: 'Concluído',
+    technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+       
+    ],
+    languages: ["javascript"],
+    link: "#"
+  },
+  {
+    title: "Previsão do tempo",
+    image: "assets/projects/previsao-tempo.png",
+    alt: "Previsão do tempo",
+    date: "11 de Julho de 2024",
+    completed: 'Concluído',
+    technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+       
+    ],
+    languages: ["javascript"],
+    link: "#"
+  },
+  {
+    title: "Conversor de moeda",
+    image: "assets/projects/conversor-moeda.png",
+    alt: "Conversor de moeda",
+    date: "03 de Outubro de 2024",
+    completed: 'Em andamento',
+    technologies: [
+      { src: "assets/mini-languages/html.svg", alt: "html" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/javascript.svg", alt: "javascript" },
+       
+    ],
+    languages: ["javascript"],
+    link: "#"
+  },
+  {
+    title: "Registro para o Governo",
+    image: "assets/projects/registro-gov.png",
+    alt: "Registro para o Governo",
+    date: "12 de julho de 2024",
+    completed: 'Concluído',
+    technologies: [
+        { src: "assets/mini-languages/react.svg", alt: "react" },
+      { src: "assets/mini-languages/mysql.svg", alt: "mysql" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+      { src: "assets/mini-languages/node.svg", alt: "node" },
+    
+       
+    ],
+    languages: ["react"],
+    link: "#"
+  },
+  {
+    title: "Ecommerce de roupas",
+    image: "assets/projects/ecommerce-roupas.png",
+    alt: "Ecommerce de roupas",
+    date: "07 de Setembro de 2023",
+    completed: 'Concluído',
+    technologies: [
+      { src: "assets/mini-languages/react.svg", alt: "react" },
+      { src: "assets/mini-languages/node.svg", alt: "node" },
+      { src: "assets/mini-languages/tailwind.svg", alt: "tailwind" },
+    
+       
+    ],
+    languages: ["react"],
+    link: "#",
+    description: `A aplicação de e-commerce de roupas traz uma experiência imersiva, unindo estilo e tecnologia com uma interface interativa. Baseada em uma API fake, a loja oferece uma navegação intuitiva e eficiente para os usuários. <br><br>
+      Recursos da aplicação: <br><br>
+      • Carrinho de compras dinâmico, onde os usuários podem adicionar e gerenciar seus produtos selecionados de forma prática; <br><br>
+      • Armazenamento de informações no LocalStorage, garantindo que os itens do carrinho permaneçam salvos mesmo após fechar o navegador; <br><br>
+      • Interface visual moderna, com um design focado em oferecer uma experiência de compra fluida; <br><br>
+      • Detalhamento completo de cada peça de roupa, incluindo descrições, preços e imagens de alta qualidade; <br>
+      `,
+      video: 'https://www.youtube.com/embed/c5lSn-u5jNA?si=sykAzLsAmpPsJl4',
+      linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
+      repository: 'https://github.com/rhuanbello/origin-nlw-heat',
+      site: 'https://dowhile2021-rhuanbello.vercel.app/'
+    
+  },
+  {
+    title: "rick and morty",
+    image: "assets/projects/rick-and-morty.png",
+    alt: "rick and morty",
+    date: "11 de Outubro de 2024",
+    completed: 'Em andamento',
+    technologies: [
+      { src: "assets/mini-languages/react.svg", alt: "react" },
+      { src: "assets/mini-languages/node.svg", alt: "node" },
+      { src: "assets/mini-languages/css.svg", alt: "css" },
+    
+       
+    ],
+    languages: ["react"],
+    link: "#"
+  },
+    // Adicione mais projetos conforme necessário
+  ];
+
+  export {projects}
