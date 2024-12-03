@@ -84,7 +84,14 @@ const projects = [
        
     ],
     languages: ["css", "html"],
-    link: "#"
+    link:'https://osmarmcn.github.io/landing-page-cat/',
+      description: `Landing page de Gatos experimental, quem quiser adotar o seu gatinho preencha o formulário para se cadastrar. <br><br>
+      Recursos da aplicação: <br><br>
+      • O projeto foi feito em html e css, baseado em para uma experiência mobile.; <br><br>
+      `,
+    video: 'https://www.youtube.com/embed/vNZ-VNXJcxE?si=0GTZigEV_q1ECc6w',
+    repository: 'https://github.com/osmarmcn/landing-page-cat',
+    linkedin: '',
   },
   {
     title: "pagina de receita",
@@ -99,7 +106,14 @@ const projects = [
        
     ],
     languages: ["css", "html"],
-    link: "#"
+    link:'https://osmarmcn.github.io/recipe-page/',
+    description: `Landing page de Receita, este projeto foi uns dos primeiros que fiz do frontend-methor, projeto simples de receita. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi feito em html e css, baseado em uma página de receita.; <br><br>
+    `,
+    video: 'https://www.youtube.com/embed/sD4vCBm_M2A?si=GN8qMYYDLoinlm5v',
+    repository: 'https://github.com/osmarmcn/recipe-page',
+    linkedin: '',
   },
   {
     title: "to-do-list",
@@ -115,9 +129,12 @@ const projects = [
     ],
     languages: ["javascript"],
     link:'https://osmarmcn.github.io/to-do-list/',
-    description: `Landing page Galeria de imagens, que contém imagens de diversos segmentos a gosto de quem for procurar uma imagem que lhe agrade. <br><br>
+    description: `Projeto de lsita de tarefas com cadastro e login, para acessar ao to do list precisa ser feito um registro, assim, ter acesso a lista de tarefas.
+    Essa lista de tarefas armazena, edita, exclui os registros ali nelas contidos indo de acordo com usuário a suas utilidades. <br><br>
     Recursos da aplicação: <br><br>
-    • O projeto foi baseado em Sass para processamento do css efoi usado aguns efeitos para deixar mais atrativo; <br><br>
+    • O projeto foi baseado em html, css e javascript, possuindo um visual atrativo e diferenciado para facilitar ao usuário seu uso.; <br><br>
+    • O prjeto contém animações e um sistema de validação oferencendo segurança na hora do cadastro; <br><br>
+    • O armazenmaneto é atraves do localstorage e no resgitro atraves de um json; <br><br>
     `,
     video: 'https://www.youtube.com/embed/WWhjO1nAKRs?si=UvfSOi3g1ScB4df7',
     repository: 'https://github.com/osmarmcn/to-do-list',
@@ -138,9 +155,12 @@ const projects = [
     ],
     languages: ["javascript"],
     link:'https://osmarmcn.github.io/time-tracking/',
-    description: `Landing page Galeria de imagens, que contém imagens de diversos segmentos a gosto de quem for procurar uma imagem que lhe agrade. <br><br>
+    description: `Uma aplicação que faz o controle atraves das horas durante o dia, semana e mes, contendo, o total de horas em determinadas atividades que se faz durante o mês. <br><br>
     Recursos da aplicação: <br><br>
-    • O projeto foi baseado em Sass para processamento do css efoi usado aguns efeitos para deixar mais atrativo; <br><br>
+    • O projeto foi baseado javscript, css e um pouco de html e foi usando alguns efeitos para deixar mais atrativo; 
+    <br><br>
+    • Foi usado json para armazenar os dados contidos; <br><br>
+    • A estrutura foi quase toda feita pelo javascript.
     `,
     video: 'https://www.youtube.com/embed/uyo9FdIZEBw?si=j7L705ZCgZaf7drf',
     repository: 'https://github.com/osmarmcn/time-tracking',
@@ -159,7 +179,17 @@ const projects = [
        
     ],
     languages: ["javascript"],
-    link: "#"
+    link:'https://osmarmcn.github.io/catalogo-livro/',
+    description: `Uma aplicação que cataloga livros online, em que voce registra o livro e a partir dai pode fazer consultas sobre determinado livro, autor, avaliação. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado javscript, css e um pouco de html.; 
+    <br><br>
+    • Foi usado json para armazenar os dados contidos; <br><br>
+    • O projeto pode fazer algumas formas de consulta e ordanação do catálogo.
+    `,
+    video: 'https://www.youtube.com/embed/Do8vPNb43i4?si=kUM9SsOwkt5bWt7K',
+    repository: 'https://github.com/osmarmcn/catalogo-livro',
+    linkedin: '',
   },
   {
     title: "Sistema de presença",
@@ -175,7 +205,17 @@ const projects = [
        
     ],
     languages: ["javascript"],
-    link: "#"
+    link:'',
+    description: `Uma aplicação que de início é um sitema de presença , que conta também com um limitador de acesso a depender do cargo do funcionário, em que o diretor tem acesso a tudo e o estagiário tem o acesso so as presenças. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado javscript, css e html, estou usando momentaneamente o mysql para armzenar os dados.; 
+    <br><br>
+    • Está sendo usado mysql para armazenar os dados contidos; <br><br>
+    • O projeto pode fazer algumas formas de consulta, criação de turmas e graficos de faltas e presença.
+    `,
+    video: '',
+    repository: 'https://github.com/osmarmcn/sistema-de-presenca',
+    linkedin: '',
   },
   {
     title: "JOKEMPO",
@@ -190,7 +230,15 @@ const projects = [
        
     ],
     languages: ["javascript"],
-    link: "#"
+    link:'https://osmarmcn.github.io/JOKENPO/',
+    description: `Jogo do jokenpo ou pedra, papel, tesoura, e que você faz sua escolha e é verificado se você ou computador ganhou a jogada. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado javscript, css e um pouco de html.; 
+    <br><br>
+    `,
+    video: 'https://www.youtube.com/embed/T0iagrSNcUs?si=pfFzttwnLGPaO3bw',
+    repository: 'https://github.com/osmarmcn/JOKENPO',
+    linkedin: '',
   },
   {
     title: "Previsão do tempo",
@@ -205,7 +253,16 @@ const projects = [
        
     ],
     languages: ["javascript"],
-    link: "#"
+    link:'https://osmarmcn.github.io/previsao-do-tempo/',
+    description: `O projeto previsão do tempo se utliza da API do openweathermap, para que seja feito a pesquisa das cidades pelo mundo e que possa ser mostrado a previsão do tempo no decorrer do dia da cidade desejada.Contendo, ainda algumas cidades ja predefinidas sem a necessidade da pesquisa. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado javscript, css e um pouco de html.; 
+    <br><br>
+    • Foi utilizado a API do openweathermap para buscar as informações do tempo. <br><
+    `,
+    video: 'https://www.youtube.com/embed/nRQ_-jaegT0?si=4EzK3eejVkbxZkWG',
+    repository: 'https://github.com/osmarmcn/previsao-do-tempo',
+    linkedin: '',
   },
   {
     title: "Conversor de moeda",
@@ -220,14 +277,24 @@ const projects = [
        
     ],
     languages: ["javascript"],
-    link: "#"
+    link:'https://osmarmcn.github.io/conversor-moedas/',
+    description: `O projeto Conversão de moedas se utliza da API da awesomeapi, para que seja feito a pesquisa de algumas moedas pre-estabelecidas, sendo convertida apenas quatro moedas.Esse valor é convertido real para outras moedas. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado javscript, css e um pouco de html.; 
+    <br><br>
+    • Foi utilizado a API da awesomeapi para buscar as informações das moedas.
+
+    `,
+    video: 'https://www.youtube.com/embed/cGCGzmTvL9I?si=zDP5HjfjlxK-3ZSn',
+    repository: 'https://github.com/osmarmcn/conversor-moedas',
+    linkedin: '',
   },
   {
     title: "Registro para o Governo",
     image: "assets/projects/registro-gov.png",
     alt: "Registro para o Governo",
     date: "12 de julho de 2024",
-    completed: 'Concluído',
+    completed: 'em Andamento',
     technologies: [
         { src: "assets/mini-languages/react.svg", alt: "react" },
       { src: "assets/mini-languages/mysql.svg", alt: "mysql" },
@@ -237,7 +304,19 @@ const projects = [
        
     ],
     languages: ["react"],
-    link: "#"
+    link:'',
+    description: `O projeto Cadastro Gov, é um projeto que busca cadastrar pessoas e entender sua situação socioeconomica do usuário, se a uma situação de vunerabilidade. Após o cadastro é gerado um pdf com as informações do usuário que é enviado ao mesmo. <br><br>
+    Recursos da aplicação: <br><br>
+    • O projeto foi baseado com react, css na parte do front e no backend foi usado o mysql com banco de dados.; 
+    <br><br>
+    • Os dados sao criptados para segurança do usuário.
+    <br><br>
+    • Após concluir o cadastro e gerado um pdf ao usuário com suas informações que foram preenchidas.
+
+    `,
+    video: 'https://www.youtube.com/embed/f0tvAQzuIVQ?si=6v-qv1fn0jl6Qbuh',
+    repository: 'https://github.com/osmarmcn/registro-gov',
+    linkedin: '',
   },
   {
     title: "Ecommerce de roupas",
