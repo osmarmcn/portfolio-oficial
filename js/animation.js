@@ -56,7 +56,7 @@ header.classList.toggle('sticky', window.scrollY > 100)
 ScrollReveal({ 
     // reset: true,
     distance: '80px',
-    duration: 2000,
+    duration: 3000,
     delay:200
 });
 
@@ -65,6 +65,7 @@ ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { or
 ScrollReveal().reveal('.about-img', { origin: 'left'});
 ScrollReveal().reveal('.about-content-text', { origin: 'right'});
 ScrollReveal().reveal('about-skill', {origin:'bottom'})
+ScrollReveal().reveal('.skills-section', {origin:'bottom'})
 
 
 
@@ -99,34 +100,34 @@ function addAnimation() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Animação para as barras lineares
+ 
   document.querySelectorAll(".progress").forEach((bar) => {
-      const percentage = bar.style.width;
-      bar.style.setProperty("--progress-width", percentage); // Salva o valor da largura final
-      bar.style.width = "0%"; // Reseta a largura para animar
-  });
+      const percentage = bar.style.width
+      bar.style.setProperty("--progress-width", percentage)
+      bar.style.width = "0%"
+  })
 
-  // Animação para as barras circulares
+  
   document.querySelectorAll(".circle").forEach((circle) => {
-      const targetPercent = parseInt(circle.getAttribute("data-percent"));
-      const textSpan = circle.querySelector("span");
+      const targetPercent = parseInt(circle.getAttribute("data-percent"))
+      const textSpan = circle.querySelector("span")
 
-      let currentPercent = 0;
+      let currentPercent = 0
 
-      // Incrementa o progresso de forma gradual
+      
       const interval = setInterval(() => {
           if (currentPercent >= targetPercent) {
-              clearInterval(interval);
+              clearInterval(interval)
           } else {
               currentPercent++;
               const gradient = `conic-gradient(
                   #00d1ff ${currentPercent * 3.6}deg,
                   #243b55 0deg
-              )`;
+              )`
 
-              circle.style.background = gradient;
-              textSpan.textContent = `${currentPercent}%`;
+              circle.style.background = gradient
+              textSpan.textContent = `${currentPercent}%`
           }
-      }, 20); // A velocidade da animação pode ser ajustada aqui
-  });
+      }, 20)
+  })
 });

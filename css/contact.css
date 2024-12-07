@@ -37,6 +37,10 @@
     gap: 1rem;
 }
 
+.contact-card{
+    margin-top: 3rem;
+}
+
 .contact-card .box-contact{
     display: flex;
     gap: 1rem;
@@ -109,11 +113,14 @@
     margin-top: 2rem;
     cursor: pointer;
     transition: .5s ease-in-out;
+     font-size: 1.2rem;
+     font-weight: bold;
 }
 
 .contact-btn:hover{
     background: transparent;
     border: 3px solid lightblue;
     color: white;
+   
 }
 

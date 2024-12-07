@@ -362,6 +362,62 @@ const projects = [
     languages: ["react"],
     link: "#"
   },
+  {
+    title: "Chatboot telegram",
+    image: "assets/projects/chatboot.png",
+    alt: "Chatboot telegram",
+    date: "12 de Agosto de 2024",
+    completed: 'Em concluído',
+    technologies: [
+      { src: "assets/mini-languages/python.svg", alt: "react" },
+     
+    
+       
+    ],
+    languages: ["python"],
+    link: "#",
+    description: `A aplicação de e-commerce de roupas traz uma experiência imersiva, unindo estilo e tecnologia com uma interface interativa. Baseada em uma API fake, a loja oferece uma navegação intuitiva e eficiente para os usuários. <br><br>
+      Recursos da aplicação: <br><br>
+      • Carrinho de compras dinâmico, onde os usuários podem adicionar e gerenciar seus produtos selecionados de forma prática; <br><br>
+      • Armazenamento de informações no LocalStorage, garantindo que os itens do carrinho permaneçam salvos mesmo após fechar o navegador; <br><br>
+      • Interface visual moderna, com um design focado em oferecer uma experiência de compra fluida; <br><br>
+      • Detalhamento completo de cada peça de roupa, incluindo descrições, preços e imagens de alta qualidade; <br>
+      `,
+      video: 'https://youtube.com/shorts/E77DQ3xXjfU?si=EeALxbgkRA0N2lWZ',
+      linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
+      repository: 'https://github.com/rhuanbello/origin-nlw-heat',
+      site: 'https://dowhile2021-rhuanbello.vercel.app/'
+    
+  },
+  {
+    title: "Site de ingressos",
+    image: "assets/projects/site-ingresso.png",
+    alt: "Site de ingressos",
+    date: "07 de Dezembro de 2024",
+    completed: 'Em andamento',
+    technologies: [
+      { src: "assets/mini-languages/laravel.svg", alt: "react" },
+      { src: "assets/mini-languages/php.svg", alt: "node" },
+      { src: "assets/mini-languages/tailwind.svg", alt: "tailwind" },
+    
+       
+    ],
+    languages: ["laravel"],
+    link: "#",
+    description: `A aplicação de e-commerce de roupas traz uma experiência imersiva, unindo estilo e tecnologia com uma interface interativa. Baseada em uma API fake, a loja oferece uma navegação intuitiva e eficiente para os usuários. <br><br>
+      Recursos da aplicação: <br><br>
+      • Carrinho de compras dinâmico, onde os usuários podem adicionar e gerenciar seus produtos selecionados de forma prática; <br><br>
+      • Armazenamento de informações no LocalStorage, garantindo que os itens do carrinho permaneçam salvos mesmo após fechar o navegador; <br><br>
+      • Interface visual moderna, com um design focado em oferecer uma experiência de compra fluida; <br><br>
+      • Detalhamento completo de cada peça de roupa, incluindo descrições, preços e imagens de alta qualidade; <br>
+      `,
+      video: 'https://www.youtube.com/embed/c5lSn-u5jNA?si=sykAzLsAmpPsJl4',
+      linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
+      repository: 'https://github.com/rhuanbello/origin-nlw-heat',
+      site: 'https://dowhile2021-rhuanbello.vercel.app/'
+    
+  },
+  
     // Adicione mais projetos conforme necessário
   ];
 
