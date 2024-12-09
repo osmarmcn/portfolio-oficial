@@ -45,13 +45,13 @@
     animation-delay: 1s;
 }
 
-.home-content p{
+/* .home-content p{
     font-size: 1.1rem;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     text-align: justify;
-}
+} */
 
 
 .home-img{
@@ -219,4 +219,165 @@
     color: var(--main-color) ;
     border: 1px solid var(--main-color);
     transition: .7s ease-in-out;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .home{
+        
+        gap: 3rem;
+       
+    
+    }
+    .home-content h3{
+        font-size: 1.15rem;
+    
+    }
+    
+    .home-content h1{
+        font-size: 1.8rem;
+    }
+    
+    .home-content .social-media a{
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        padding: .2rem;
+    
+    }
+
+    .home-img{
+       
+        
+        width: 350px;
+        height: 450px;
+        
+        
+    }
+    .home-img::before{
+       
+        width: 350px;
+        height: 450px;
+        
+    
+    }
+    
+    .home-img::after{
+        
+        width: 350px;
+        height: 450px;
+       
+    
+    }
+
+    .home-img-box .box-img img{  
+        height: 350px;   
+    }
+
+    .home-content .btn{
+        padding: 1rem 1.3rem;
+        font-size: .6rem;
+        
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+    .home{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 2rem 10% 0;
+    
+    }
+
+    .home-img{
+       
+        
+        width: 300px;
+        height: 400px;
+        
+        
+    }
+    .home-img::before{
+       
+        width: 300px;
+        height: 400px;
+        
+    
+    }
+    
+    .home-img::after{
+        
+        width: 300px;
+        height: 400px;
+       
+    
+    }
+
+    .home-img-box .box-img img{  
+        height: 300px;   
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 499px){
+    .home{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 2rem 10% 0;
+    
+    }
+    .home-content h3{
+        font-size: 1rem;
+    
+    }
+    
+    .home-content h1{
+        font-size: 1.5rem;
+    }
+    
+    .home-content .social-media a{
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        padding: .2rem;
+    
+    }
+
+    .home-img{
+       
+        
+        width: 300px;
+        height: 400px;
+        
+        
+    }
+    .home-img::before{
+       
+        width: 300px;
+        height: 400px;
+        
+    
+    }
+    
+    .home-img::after{
+        
+        width: 300px;
+        height: 400px;
+       
+    
+    }
+
+    .home-img-box .box-img img{  
+        height: 300px;   
+    }
 }

@@ -8,11 +8,7 @@ var typed = new Typed(".dynamic-text", {
 // ---------------------- icon menu ----------------------------------------------------//
 let menuIcon = document.getElementById("menu-icon")
 let navbar = document.querySelector('.navbar')
-// <i class='bx bxs-x-circle'></i>
-// menuIcon.addEventListener("click", (e) =>{
-//     e.classList.toggle('bxs-x-circle')
-//     navbar.classList.toggle('active')
-// })
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bxs-x-circle')
     navbar.classList.toggle('active-btn')
@@ -20,7 +16,7 @@ menuIcon.onclick = () => {
 }
 
 menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('show'); // Adiciona ou remove a classe 'show'
+    navbar.classList.toggle('active'); // Adiciona ou remove a classe 'show'
 });
 
 // ------------------------ remove ------------------------------------------------------//
