@@ -59,7 +59,7 @@
     overflow: hidden;
     
     width: 450px;
-    height: 600px;
+    height: 550px;
     background: var(--bg-color);
     border-radius: 16px;
    
@@ -162,7 +162,7 @@
 
 .home-img-box .box-img img{
     width: 100%;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
     border-radius: 20px;
     transition:.3s ease-in-out;
