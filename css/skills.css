@@ -167,16 +167,18 @@
 
 
 .scroller {
-    max-width: 1400px;
+    max-width: 900px;
     overflow: hidden; 
+   
   }
   
   .scroller__inner {
-    padding-block: 1rem;
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     gap: 1rem;
     animation: scroll var(--_animation-duration, 50s) var(--_animation-direction, forwards) linear infinite;
+    max-width: 100%;
+    
   }
   
   .scroller[data-animated="true"] {
@@ -224,8 +226,8 @@
   }
   
   .tag-list li {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     padding: 1.5rem;
     background: var(--clr-primary-400);
     border-radius: 0.5rem;
@@ -233,8 +235,8 @@
   }
 
   .tag-list li img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     color: #0ef;
 
   }
@@ -242,3 +244,45 @@
   .test {
     background: red !important;
   }
+
+  @media (max-width: 1024px) { /* Notebook */
+    .scroller {
+        max-width: 900px; /* Ajusta o tamanho */
+    }
+
+    .scroller__inner {
+        --_animation-duration: 70s; /* Aumenta o tempo da animação */
+    }
+}
+
+@media (max-width: 768px) { /* Tablet */
+    .scroller {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .scroller__inner {
+        --_animation-duration: 80s; /* Mais lento para telas menores */
+    }
+}
+
+@media (max-width: 480px) { /* Celular */
+    .scroller {
+        max-width: 400px; /* Usa toda a largura da tela */
+        width: 100%;
+    }
+
+    .scroller__inner {
+        --_animation-duration: 80s; /* Ainda mais lento */
+    }
+}
+
+/* Definição da animação */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

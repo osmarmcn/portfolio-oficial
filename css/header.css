@@ -1,4 +1,4 @@
-@import 'geral.css';
+
 
 .header{
     position: fixed;
@@ -17,9 +17,9 @@
 .header .sticky{
     border-bottom: .1rem solid rgba(0,0,0, .2);
 }
-.header .img-logo{
-    width: 100px;
-    height: 40px;
+.header .img-logo {
+    width: auto; /* Ajuste para redimensionar automaticamente */
+    height: auto;
 }
 
 .header .img-logo .logo{
@@ -72,3 +72,4 @@
     color: var(--text-color);
     display: none;
 }
+

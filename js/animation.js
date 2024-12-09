@@ -19,6 +19,10 @@ menuIcon.onclick = () => {
   
 }
 
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('show'); // Adiciona ou remove a classe 'show'
+});
+
 // ------------------------ remove ------------------------------------------------------//
 menuIcon.classList.remove('bxs-x-circle')
 navbar.classList.remove('active-btn')
@@ -131,3 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 20)
   })
 });
+
+
+// ---------------------------------------------------------------
+
+
+

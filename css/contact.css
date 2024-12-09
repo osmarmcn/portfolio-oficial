@@ -13,7 +13,7 @@
 .contact-content{
     display: grid;
     grid-template-columns: 1fr 1.3fr;
-    gap: 3rem;
+   gap: 10rem;
    
     
 }
@@ -66,28 +66,39 @@
 }
 
 .contact-content .contact-info form{
-    padding: 2.5rem 3.5rem 3.5rem;
+    padding: 2.2rem 1.2rem;
     border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.835);
-    text-align: center;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
 }
 
  .contact-info h2{
     font-size: 2.5rem;
  }
+ .contact-info{
+    max-width: 460px;
 
+ }
+ .contact-info form{
+   
+ }
 
 .contact-info .field-box{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 2rem;
+    width: 100%;
 }
 
 .contact-info .field-box input,
 .contact-info .field-box textarea{
-    padding: 1.2rem;
+    width: 100%;
+    padding: .5rem;
     border-radius: .6rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: white;
     border: .15rem solid black;
 }
